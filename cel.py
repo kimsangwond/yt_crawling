@@ -1,5 +1,9 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
 
 
 driver = webdriver.Chrome('/Users/sangwon/workspace/youtube_crawling/chromedriver')
